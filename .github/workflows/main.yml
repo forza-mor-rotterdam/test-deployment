@@ -26,4 +26,4 @@ jobs:
           KUBE_CERTIFICATE: ${{ secrets.KUBE_CERTIFICATE }}
           KUBE_TOKEN: ${{ secrets.KUBE_TOKEN }}
         with:
-          args: get pods
+          args: rollout restart deployment/profilr-deployment
